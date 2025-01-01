@@ -31,7 +31,7 @@ app.post('/colleges', async (req, res) => {
     const collegeQuery = `
         SELECT "Location", "NIRF Rank", 
                "Highest Package (LPA)", "Average Package (LPA)", 
-               "Placement Rate %", "Facilities", "Reddit Review"
+               "Placement Rate (%)", "Facilities", "Reddit Review"
         FROM college_review 
         WHERE "College Name" = $1
         
