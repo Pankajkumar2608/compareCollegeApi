@@ -33,7 +33,7 @@ app.post('/colleges', async (req, res) => {
                "Highest Package (LPA)", "Average Package (LPA)", 
                "Placement Rate", "Facilities", "Reddit Review"
         FROM college_review 
-        WHERE "College Name" = $1
+        WHERE "Institute Name" = $1
         
     `;
 
