@@ -7,9 +7,9 @@ const { Pool } = pkg;
 dotenv.config();
 const app = express();
 
-app.use(cors(
-    origin: ['https://www.motivationkaksha.com/','http://127.0.0.1:5577/','https://motivationkaksha.com/']
-));
+app.use(cors({
+  origin: ['https://www.motivationkaksha.com/', 'http://127.0.0.1:5577/', 'https://motivationkaksha.com/']
+}));
 
 app.use(express.json());
 
